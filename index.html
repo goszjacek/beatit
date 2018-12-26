@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<title>Start</title>	
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-2">
+	<meta http-equiv="content-language" content="pl">
+	
+	<style>
+		@media (min-width: 800px){
+			html,body{
+				margin:0;
+				padding:0;
+				background-color: #058ED0;
+			}
+
+			#block-choice{
+				height:100vh;
+			}
+
+			#choicearea{
+				width:30%;
+			/*	height:90vh;*/
+				position:relative;
+				top:2%;
+				margin: 0% 33% 0% 33%;
+				padding: 2%;
+				background-color: white;
+				border-radius: 20px;
+				text-align:center;
+				
+			}
+
+
+			#choicebutton{
+				background-color: #078CCC;
+				border: 3px,solid,white;
+				width: 30%;
+				height: 30%;
+				border-radius: 10px;
+			}
+
+			h2{
+				font-size: 2em;
+				text-align: center;
+				color: #FC7F03;
+			}
+
+			#choicearea section input{
+				background-color: #058ED0;
+				width: 80%;
+				height: 10%;
+				margin: 2% 10% 2% 10%;
+				padding: 1em;
+				border: 3px solid #058ED0;
+				border-radius: 10px;
+				color: #fff;
+				font-size: 1em;
+			}
+
+			#launch-course-button{
+				background-color: #FFA719;
+				/*width: 50%;*/
+				height: 10%;
+				margin: 2% 10% 2% 10%;
+				padding: 1em;
+				border:0;
+				border-radius: 10px;
+				color: #2152A5;
+				font-size: 1em;
+				cursor: pointer;
+
+			}
+		}
+
+		@media(max-width: 800px){
+			html,body{
+				margin:0;
+				padding:0;
+				background-color: #058ED0;
+			}
+
+			#block-choice{
+				height:100vh;
+			}
+
+			#choicearea{
+				width:100%;
+			/*	height:90vh;*/
+				position:relative;
+				top:2%;
+				margin: 0% 0% 0% 0%;
+				padding: 0%;
+				background-color: white;
+				border-radius: 10px;
+				text-align:center;
+				
+			}
+
+
+			#choicebutton{
+				background-color: #078CCC;
+				border: 3px,solid,white;
+				width: 60%;
+				height: 30%;
+				border-radius: 5px;
+			}
+
+			h2{
+				font-size: 1em;
+				text-align: center;
+				color: #FC7F03;
+			}
+
+			#choicearea section input{
+				background-color: #058ED0;
+				width: 90%;
+				height: 20%;
+				margin: 2% 0% 2% 0%;
+				padding: 0.5em;
+				border: 2px solid #058ED0;
+				border-radius: 5px;
+				color: #fff;
+				font-size: 1em;
+			}
+
+			#launch-course-button{
+				background-color: #FFA719;
+				/*width: 50%;*/
+				height: 10%;
+				margin: 2% 0% 2% 0%;
+				padding: 1em;
+				border:0;
+				border-radius: 5px;
+				color: #2152A5;
+				font-size: 1em;
+				cursor: pointer;
+
+			}
+
+		}
+
+		/*#choicearea input:hover{
+			background-color: #fff;
+			color: #058ED0;
+			border: 2px solid #058ED0; 
+			cursor: pointer;
+		}*/
+
+	</style>
+	<link href="styles/style.css" rel="stylesheet">
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+	<script src="jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<div id="block-choice">
+	<div id="choicearea"> 
+	<h2> Wybierz kursy:  </h2> </br>
+	<input type="checkbox" id="checkbox-checkall" name="checkall"> 
+	<label for="checkbox-checkall" id="checkall-text"> <span></span> Zaznacz wszystkie </label>
+	<section id="choicebuttons"  class="probna-klasa">
+		<input type="button" value="Chemia1" >
+		<input type="button" value="Chemia2" >
+		<input type="button" value="Chemia3" >
+		<input type="button" value="Chemia4" >
+		<input type="button" value="Chemia5" >
+		<input type="button" value="Chemia6" >
+		<input type="button" value="Chemia7" >
+		<input type="button" value="Chemia8" >
+		<!-- <input type="button" value="Chemia7" > -->
+	</section>
+
+	<input id="launch-course-button" type="button" value="Przejdź do kursu"> 
+
+	</div>
+</div>
+<div id="block-course">
+	<div id="course-area">
+		<div id="course-title">
+		<section id="title"> Co to jest? </section>  <img class="exit-cross" src="images/blue-cross.png" >
+		</div>
+
+		<div id="image-display"> 
+		<img src="" >
+		</div>
+		<div id="answer-area">
+			<input id="answer" class="text" type="text" >
+			<input id="checkbutton" class="button" type="button" value="nic" >
+		</div>
+		</br>
+		Twoje punkty: 
+		<section id="points">
+		0
+		</section>
+	</div>
+</div>
+<script>
+
+
+</script>
+<script type="text/javascript" src="scripts/script1.js"></script>
+</body>
+</html>

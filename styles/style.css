@@ -1,0 +1,305 @@
+@media (min-width: 800px){
+	body,html{
+		background-color: #058ED0;
+		margin:0;
+		padding: 0;
+	}
+
+	#block-course{
+		display:none;
+		height:100vh;
+	}
+
+
+
+	#course-title{
+		position: relative;
+		text-align:center;
+		min-height: 50px;
+	}
+
+	#course-area{
+		background-color: #fff;
+		width:70%;
+		
+		padding: 2% 5% 3% 5%;
+		margin: 0% 10% 13% 10%;
+
+		position:relative;
+		top:5%;
+
+
+		border-radius: 50px;
+
+		/*text-align: center;*/
+		color: #FC7F03;
+		font-size:2em;
+
+
+	}
+
+	#image-display{
+		text-align: center;
+		background-color: #f8f8f8;
+		width:96%;
+		margin:2%;
+		padding:0;
+		
+	}
+
+	#image-display img{
+		max-width:100%;
+		height: 100%;
+	}
+
+
+	#answer-area{
+		text-align: left;
+		width:100%;
+		margin: 2% 0% 0% 0%;
+	}
+
+
+
+	/*#answer-area input.text{*/
+	#answer-area input.text{
+		width:50%;
+		margin: 0% 5% 0% 5%;	
+		font-size: 20px;
+		height: 30px;
+		padding: 1%;
+
+		border: 4px solid #058ED0;
+		border-radius:15px;
+		color: #058ED0;
+		
+	}
+
+	.correct-answer{
+		width:50%;
+		margin: 0% 5% 0% 5%;	
+		font-size: 20px;
+		height: 30px;
+		padding: 1%;
+
+		border: 4px solid #058ED0;
+		border-radius:15px;
+		color: green;
+	}
+
+	#answer-area input.button{
+		background-color: #058ED0;
+		height: 70px;
+		width: 25%;
+		margin:0;
+
+		border-radius: 20px;
+
+		font-size: 25px;
+		color:#FDA147;
+	}
+
+
+	img.exit-cross{
+		float: right;
+		width: 35px;
+		height: 35px;
+		position:absolute;
+		top: 5px;
+		right: 5px;
+		cursor:pointer;
+	}
+
+	#points{
+		float: right;
+		display: block;
+		margin: 0% 5% 0% 0%;
+	}
+
+
+	/*for checkboxes*/
+	input[type="checkbox"]{
+		display:none;
+	}
+
+	input[type="checkbox"] + label span{
+		display: inline-block;
+		width: 30px;
+		height:30px;
+		margin: -1px 4px 0 0;
+		vertical-align: middle;
+		background: url("../images/checkbox-checked.png") left top no-repeat;
+		background-size: cover;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked + label span{
+		background: url("../images/checkbox.png") left top no-repeat;
+		background-size: cover;
+	}
+	input[type="checkbox"] + label{
+		font-size: 20px;
+		color: #058ED0;
+	    
+	    /*to prevent highlighting*/
+	    -webkit-user-select:none;
+	    -khtml-user-select:none;	
+	    -moz-user-select:none;
+	    -o-user-select:none;
+	    user-select:none;
+	}
+
+}
+
+@media (max-width: 800px){
+	body,html{
+		background-color: #058ED0;
+		margin:0;
+		padding: 0;
+	}
+
+	#block-course{
+		display:none;
+		height:100vh;
+	}
+
+
+
+	#course-title{
+		position: relative;
+		text-align:center;
+		min-height: 50px;
+	}
+
+	#course-area{
+		background-color: #fff;
+		width:100%;
+		
+		padding: 2% 5% 3% 5%;
+		margin: 0% 10% 13% 10%;
+
+		position:relative;
+		top:0%;
+
+
+		border-radius: 10px;
+
+		/*text-align: center;*/
+		color: #FC7F03;
+		font-size:2em;
+
+
+	}
+
+	#image-display{
+		text-align: center;
+		background-color: #f8f8f8;
+		width:96%;
+		margin:2%;
+		padding:0;
+		
+	}
+
+	#image-display img{
+		max-width:100%;
+		height: 100%;
+	}
+
+
+	#answer-area{
+		text-align: left;
+		width:100%;
+		margin: 2% 0% 0% 0%;
+	}
+
+
+
+	/*#answer-area input.text{*/
+	#answer-area input.text{
+		width:50%;
+		margin: 0% 5% 0% 5%;	
+		font-size: 20px;
+		height: 30px;
+		padding: 1%;
+
+		border: 4px solid #058ED0;
+		border-radius:15px;
+		color: #058ED0;
+		
+	}
+
+	.correct-answer{
+		width:50%;
+		margin: 0% 5% 0% 5%;	
+		font-size: 20px;
+		height: 30px;
+		padding: 1%;
+
+		border: 4px solid #058ED0;
+		border-radius:15px;
+		color: green;
+	}
+
+	#answer-area input.button{
+		background-color: #058ED0;
+		height: 70px;
+		width: 25%;
+		margin:0;
+
+		border-radius: 20px;
+
+		font-size: 25px;
+		color:#FDA147;
+	}
+
+
+	img.exit-cross{
+		float: right;
+		width: 35px;
+		height: 35px;
+		position:absolute;
+		top: 5px;
+		right: 5px;
+		cursor:pointer;
+	}
+
+	#points{
+		float: right;
+		display: block;
+		margin: 0% 5% 0% 0%;
+	}
+
+
+	/*for checkboxes*/
+	input[type="checkbox"]{
+		display:none;
+	}
+
+	input[type="checkbox"] + label span{
+		display: inline-block;
+		width: 30px;
+		height:30px;
+		margin: -1px 4px 0 0;
+		vertical-align: middle;
+		background: url("../images/checkbox-checked.png") left top no-repeat;
+		background-size: cover;
+		cursor: pointer;
+	}
+
+	input[type="checkbox"]:checked + label span{
+		background: url("../images/checkbox.png") left top no-repeat;
+		background-size: cover;
+	}
+	input[type="checkbox"] + label{
+		font-size: 20px;
+		color: #058ED0;
+	    
+	    /*to prevent highlighting*/
+	    -webkit-user-select:none;
+	    -khtml-user-select:none;	
+	    -moz-user-select:none;
+	    -o-user-select:none;
+	    user-select:none;
+	}
+
+}

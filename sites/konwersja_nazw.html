@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>konwersja nazw</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+<textarea id="text-in" style="height: 300px;" > </textarea>
+<textarea id="text-out" style="height: 300px;" > </textarea>
+<textarea id="text-out2" style="height: 300px;" > </textarea>
+<input type="button" id="button" >
+<div class="display" style="width:40%;">
+</div>
+<div class="useranswer" style="width:40%";>
+</div>
+<script>
+
+// $("#text-in").val("Ag2O				Pb(OH)2				Cd(OH)2				Bi(OH)3				Cu(OH)2				Al(OH)3				Zn(OH)2				Fe(OH)2				Fe(OH)3				Cr(OH)3				Mn(OH)2				Ni(OH)2				Co(OH)2				Ba(OH)2				Sr(OH)2				Ca(OH)2				Mg(OH)2");
+
+function convert(){
+	var text = $("#text-in").val();
+	var okno1 = "\"";
+	var okno2 = "\"";
+
+}
+
+$("#button").click(function(){
+	var text = $("#text-in").val();
+	var text2="\"",text3="\"", spaceAdded=false, text2iterator=0;
+	for(var i=0; i<text.length; i++)
+	{
+
+		if(text[i]==='\t'||text[i]==='\n')
+		{
+			if(!spaceAdded)
+			{
+				text2+="\",\n\"";
+				text3+="\",\n\"";
+				spaceAdded=true;
+			}
+		}
+		else
+		{
+			spaceAdded=false;
+			if(text[i]==='1'||text[i]==='2'||text[i]==='3'||text[i]==='4'||text[i]==='5'||text[i]==='6')
+			{
+				if(text[i+1]==="+"||text[i+1]==="-"||text[i+1]==="–")
+				{
+					text2+=" <sup> " + text[i] + text[i+1] + " </sup>";
+					text3+=text[i] + text[i+1];
+					i++;
+
+				}
+				else
+				{
+
+					text2+=" <sub> " + text[i] + " </sub> ";
+					text3+= text[i];
+				}
+			}
+			else
+			{
+				text2+= text[i];
+				text3+= text[i];
+			}
+		}
+	}
+	text2+="\"";
+	text3+="\"";
+	var text4="";
+	for(var i=0; i<text2.length; i++)
+	{
+		if(text2[i]==='\\')
+			if(text2[i+1]==='n')
+			{
+				text4+="</br>";
+				i++;
+			}
+		else
+			text4+=text2[i];
+
+	}
+
+	$("#text-out").val(text2);
+	$("#text-out2").val(text3);
+	$("div.display").html("</br>" +text4);
+	$("div.useranswer").html("</br>"+text3);
+});
+
+
+</script>
+
+
+</body>
+</html>
